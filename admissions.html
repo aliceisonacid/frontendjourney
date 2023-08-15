@@ -8,22 +8,43 @@
     <body>
        
         <style>
+
+            body {
+                font-family: rajdhani;
+
+            }
+
+
+
             .section1{
                 text-align: center;
                 background-color: white;
-                border:100px solid white;
-                width:20px
-                height:60px;
-                margin:auto 
-                box-sizing:border-box
-                padding: 50px
+                border:10px solid black;
+                max-width: max-content;
+                margin:20px auto 10px auto; 
+                padding:10px
+                
+                
             }
             
 
             .section2{
+                text-align: center;
                 background-color: white;
-                border:100px solid white; 
-                margin: 100px;
+                border:10px solid black; 
+                margin: 10px auto 10px auto;
+                max-width: fit-content;
+            }
+
+            .section3{
+                text-align: center;
+                width: 500px;
+                background-color: white;
+                color: black;
+                border:20px solid white;
+                margin: 10px auto 10px auto;
+
+
             }
 
             img{
@@ -48,6 +69,18 @@
                 font-size: smaller;
             }
 
+            #comments {
+                width:350px;
+                padding:1px;
+                height:70px;
+                font-size: small cursive;
+                border: 1px solid black; 
+            }
+
+            #radio {
+                text-align: center;
+            }
+
         </style>
 
         <!--I do not own the photos linked in this HTML-->
@@ -55,7 +88,9 @@
 
         <body background="https://static.wikia.nocookie.net/905e166a-c6c7-43ae-8854-bee50f44f21e"></body>
 
-        <div id="box">Disclaimer: The images used are not my own and sourced from various platforms. 
+        <div id="box">Disclaimer: The images used are not my own and sourced from various platforms.<br>
+            使用されている画像は私自身のものではなく、さまざまなプラットフォームから入手したものです。<br>
+            Las imágenes utilizadas no son mías y provienen de varias plataformas.<br>
            </div>
         
            <h1>ADMISSIONS APPLICATION</h1>
@@ -63,8 +98,8 @@
            <!--sectioned area for applicant information-->
         <form>
         <div class="section1"> 
+        Clan Name <input type="text">
         First Name <input type="text">
-        Last Name <input type="text">
         Date of Birth <input type="date">
         Home Address <input type="text"><br><br>
         City <input type="text">
@@ -76,20 +111,89 @@
 
         <form>
         <div class="section2">
-        What Interests You About Jujutsu High? <input type="textarea">
-        What is your curse technique? <input type="textarea">
-        Who would you prefer as your mentor? 
-        <select name="mentors" id="teachers">
+        What Interests You About Jujutsu High? <br>
+        <form action="/html/tags/html_form_tag_action.cfm method=post">
+            <textarea name="comments" id="comments"></textarea>
+        </form>
+        
+        
+        
+        ><br><br>
+        What is your curse technique?<br> <form action="/html/tags/html_form_tag_action.cfm method=post">
+            <textarea name="comments" id="comments"></textarea>
+            <br><br>
+        Who would you prefer as your mentor? <br>
+        <select name="mentors" id="teachers"><br>
         <option value="akari">Akari Nitta</option>
         <option value="atsuya">Atsuya Kusakabe</option>
         <option value="Kiyotaka">Kiyotaka Ijichi</option>
         <option value="Masamichi">Masamichi Yaga</option>
         <option value="Satoru">Satoru Gojo</option>
         <option value="Shoko">Shoko Ieiri</option>
-        </select>
+        </select><br><br>
+        Why Them In Particular?<br>
+        <form action="/html/tags/html_form_tag_action.cfm method=post">
+            <textarea name="comments" id="comments"></textarea><br><br>
+            Do You Have Any extracurricular activities?<br>
+            <form action="/html/tags/html_form_tag_action.cfm method=post">
+                <textarea name="comments" id="comments"></textarea><br><br>
+
+                Are you Sure About This?
+                <input type="checkbox" name="yes" value="yes">yes
+                <input type="checkbox" name="no" value="no"> No 
+        
+    </div>
+
+    <div class="section3">
+
+        <form action="/html/tags/html_form_tag_action.cfm method=post">
+            <textarea name="comments" id="comments">
+
+                Terms and Conditions for Submitting an Admissions Application to JuJutsu High:
+
+By submitting an admissions application to the school, you agree to the following terms and conditions:
+
+1. Eligibility: You must meet the eligibility criteria set by the school in order to submit an admissions application. This may include meeting certain academic requirements, providing necessary documentation, and paying any applicable fees.
+
+2. Accuracy of Information: You are responsible for ensuring that all information provided in the admissions application is accurate and up-to-date. This includes personal details, educational history, test scores, and any other relevant information required by the school.
+
+3. Application Fee: Some schools may require an application fee to be paid at the time of submission. This fee is non-refundable and does not guarantee admission. The amount and payment method will be specified by the school.
+
+4. Submission Deadline: The admissions application must be submitted before the specified deadline. Late applications may not be considered, unless otherwise stated by the school.
+
+5. Application Materials: You are responsible for submitting all required application materials within the specified timeframe. This may include transcripts, recommendation letters, essays, portfolios, or any other documents requested by the school.
+
+6. Verification of Documents: The school reserves the right to verify the authenticity of all submitted documents. If any falsification or misrepresentation is discovered, your application may be rejected or any offer of admission may be rescinded.
+
+7. Communication: The school may communicate with you regarding your admissions application through various means such as email, phone calls, or postal mail. It is your responsibility to provide accurate contact information and promptly respond to any communication from the school.
+
+8. Admission Decision: The final decision regarding admission rests solely with the school's admissions committee or relevant authorities. The decision is based on various factors including academic qualifications, test scores, personal statements, recommendations, and available space in the program.
+
+9. Confidentiality: The information provided in the admissions application will be treated as confidential and will only be used for the purpose of evaluating your application. However, the school may be required to disclose certain information to government agencies or as required by law.
+
+10. Data Protection: The school will handle your personal information in accordance with applicable data protection laws. By submitting the admissions application, you consent to the collection, use, and storage of your personal data for the purpose of processing your application.
+
+11. Withdrawal of Application: If you wish to withdraw your admissions application, you must notify the school in writing before a specified deadline. After this deadline, withdrawal may not be possible or may result in forfeiture of any fees paid.
+
+12. Acceptance of Offer: If you are offered admission, you may be required to accept the offer within a specified timeframe and pay any necessary deposits or fees to secure your place in the program.
+
+13. Rejection of Application: If your admissions application is rejected, you may not be eligible to reapply for the same program within a certain period of time. The school's decision is final and cannot be appealed.
+
+14. Changes to Terms and Conditions: The school reserves the right to modify or update these terms and conditions at any time without prior notice. It is your responsibility to review and comply with the most current version available on the school's website or provided during the application process.
+
+Please note that these terms and conditions are provided as a general guideline. It is important to carefully read and understand the terms and conditions provided by each individual institution.
+
+</textarea><br>
+
+<input type="radio" name="agree" value="agree"> I agree<br><br>
+<button>Submit Application</button>
+
+
+
     </div>
         
-</form>
+</form><br>
+
         
         
         
